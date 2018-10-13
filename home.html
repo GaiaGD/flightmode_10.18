@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+
+    <link rel="stylesheet" type="text/css" href="css/dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/dist/css/bootstrap-reboot.css">
+    <link rel="stylesheet" type="text/css" href="css/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="datepicker.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:900,100,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+
+    <section class="airport-group">
+
+      <div class="flexcontainer">
+
+        <div id="airlineFlightCodePrinted" class="oswaldfont">
+        </div>
+
+
+        <div id="dateOfFlight" class="oswaldfont">
+        </div>
+
+      </div>
+
+
+    </section>
+
+
+    <section class="fromWhereToWhere wrap flexcontainer">
+      <div class="itinerary">
+        <div class="plane-icon">&nbsp;</div>
+        <div class="airport-group">
+          <div class="airportName Depart padding-top-lg">
+            <h2 id="iata-Code">FROM</h2>
+            <div id="weatherFrom" class="flexcontainer">
+              <div id="weatherFromIcon"></div>
+              <div class="weatherFromText">
+                <div id="weatherFromTemperature">0°</div>
+                <div id="weatherFromDescription">clear</div>
+              </div>
+            </div>
+            <p id="airport-name">Airport Name</p>
+            <p id="airport-city">City</p>
+            <p id="airport-country">Country</p>
+          </div>
+          <div class="airportName Arrival padding-top-lg">
+            <h2 id="iata-Code-arrival">TO</h2>
+            <div id="weatherTo" class="flexcontainer">
+
+
+              <div class="row">
+                <div class="container nopadding">
+
+                  <div class="col-md-4 col-md-offset-4">
+
+                    <div class="pull-right" id="weatherToIcon"></div>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="weatherToText">
+              <div id="weatherToTemperature">0°</div>
+              <div id="weatherToDescription">clear</div>
+            </div>
+          </div>
+          <p id="airport-name-arrival">Airport Name</p>
+          <p id="airport-city-arrival">City</p>
+          <p id="airport-country-arrival">Country</p>
+        </div>
+      </div>
+
+      <div class="terminal-info flexcontainer airport-group">
+        <div class="terminal-departure">
+          <div id="terminal-Departure"></div>
+          <div id="gate-Departure"></div>
+        </div>
+        <div class="terminal-arrival ">
+          <div id="terminal-Arrival"></div>
+          <div id="gate-Arrival"></div>
+        </div>
+
+      </div>
+
+      <div class="times">
+        <div class="airplane-details">
+          <h3 id="airline">
+            AIRLINE
+          </h3>
+          <p id="aircraft">
+            AIRCRAFT
+          </p>
+        </div>
+        <div class="timing-details">
+          <div class="Departing timing">
+            <p>DEPARTURE TIME</p>
+            <h2 id="departingTime"></h2>
+            <div class="delaysDepartureWide">
+              <div class="delaysDeparture"></div>
+              <div id="delaysDeparture"></div>
+            </div>
+
+          </div>
+          <div class="Arrival timing">
+            <p>ARRIVAL TIME</p>
+            <h2 id="localTimeArrival"></h2>
+            <div class="delaysArrivalWide">
+              <div class="delaysArrival"></div>
+              <div id="delaysArrival"></div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+	<div class="introwindow"> 
+		<input id="flyBack" class="button" type="submit" value="Fly back">
+	</div>
+
+
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+    <script src="script.js"></script>
+    <script src="goback.js"></script>
+
+  </body>
+
+</html>
